@@ -5,8 +5,8 @@
             options: ["A designer’s collection of favorite typefaces.","Typefaces in the same type category, such as slab serif.","Any group of typefaces that work well together.","Typefaces that are variations of each other and designed to work together."],
             choice: 3,
             questionImage: "Assets/images/q4.JPG",
-            answerText: "E5",
-            answerImage: "",
+            answerText: "A type family is a range of typeface designs that are variations of one basic style of alphabet. There are hundreds – maybe thousands – of typeface families.",
+            answerImage: "Assets/images/a1.png",
             
         },
         q2: {
@@ -14,39 +14,39 @@
             options: ["Stroke Axis","Crossbar","Descender","Baseline"],
             choice: 1,
             questionImage: "Assets/images/q1.png",
-            answerText: "B2",
-            answerImage: "",
+            answerText: "The (usually) horizontal stroke across the middle of uppercase A and H is a crossbar.",
+            answerImage: "Assets/images/a2.png",
         },
         q3: {
             question: "Which of the following would be the best way to improve the readability of this paragraph?",
             options: ["More space between letters.","More space between words.","More space between lines.","Make the typeface bolder."],
             choice: 2,
             questionImage: "Assets/images/q2.png",
-            answerText: "C3",
-            answerImage: "",
+            answerText: "Line spacing, or “leading”, is the amount of space between the baselines of each line of text. Correct leading is important because it gives multiple lines of text optimum legibility.",
+            answerImage: "Assets/images/a3.png",
         },
         q4: {
             question: "Garamound is part of which font category?",
             options: ["Oldstyle","Slab Serif","Sans Serif","Script"],
             choice: 0,
             questionImage: "Assets/images/q3.png",
-            answerText: "D4",
-            answerImage: "Assets/images/q3.png",
+            answerText: "Garamond is a group of many old-style serif typefaces, named for sixteenth-century Parisian engraver Claude Garamond (generally spelled as Garamont in his lifetime)",
+            answerImage: "Assets/images/a4.png",
         },
         q5: {
             question: "A serif typeface",
             options: ["has an extra brush stroke at the end of the letter.","has no thick/thin relationship.","does not have an extra brush stroke at the end of the letter.","B & C"],
             choice: 0,
-            questionImage: "",
-            answerText: "A1",
-            answerImage: "",
+            questionImage: "Assets/images/q6.jpg",
+            answerText: "Serifs fall into various groups and can be generally described as hairline (hair), square (slab), or wedge and are either bracketed or unbracketed.",
+            answerImage: "Assets/images/a6.png",
         },
         q6: {
             question: "Name the part of the letterform.",
             options: ["Bowl","Eye","Aperture","Counter"],
             choice: 0,
             questionImage: "Assets/images/q5.png",
-            answerText: "A1",
+            answerText: "In typography, the curved part of the character that encloses the circular or curved parts (counter) of some letters such as d, b, o, D, and B is the bowl.",
             answerImage: "",
         },
     }
@@ -113,7 +113,7 @@
             clearHtml();
             writeQ();
             showTimer();
-        }, 3000);
+        }, 5000);
         writeStats();
     })
 
@@ -153,7 +153,7 @@
                 clearHtml();
                 writeQ();
                 showTimer();
-            }, 3000);
+            }, 5000);
             writeStats();
     }
     // debugger;
@@ -205,4 +205,5 @@
         reset();
         startGame();
         $("#final").attr("class", "invisible")
+        $("#reset").attr("class", "invisible")
     })

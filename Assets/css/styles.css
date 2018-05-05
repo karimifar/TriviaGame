@@ -60,6 +60,12 @@ p.questions {
     width: 100%;
 }
 
+#answer-image img{
+    max-width: 100%;
+}
+#answer-image{
+    padding: 20px;
+}
 #stats{
     padding-left: 50px;
 }
@@ -101,7 +107,7 @@ p.questions {
 }
 h1{
     margin-bottom: 30px;
-    font-size: 72px;
+    font-size: 60px;
 }
 h1.right , #fcorrect{
     color: green;
